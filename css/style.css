@@ -209,11 +209,8 @@ h3{
     }
 /*-------------- footer:coot-container-------------------- */
     .foot-container{
-      /* width: 278px; */
-      width: 100%;
-      /* margin: auto; */
+     width: 278px; 
       margin-left: 62px;
-      background-color: red;
     }
     .foot-logo{
         width: 278px;
