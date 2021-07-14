@@ -1,0 +1,156 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+/*----------------------- fonts ------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,700&display=swap');
+
+
+
+/* ------------------common------------------------------ */
+h3{
+ color: #18191F;
+}
+.text{
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+/* -------------------**header**------------------------- */
+.head-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #2D25A0;
+    width: 1440px;
+    height: 677px;
+   
+}
+.head-text{
+ width: 485px;
+ height: 230px;
+ margin-left: 156px;
+
+}
+.head-text button{
+    width: 168px;
+    height: 44px;
+    padding: 10px,24px,10px,24px;
+    color: white;
+    background-color: #E02C6D;
+}
+.head-tittle{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.head-banner{
+    width: 556px;
+    height: 438px;
+    margin-left: 102px;
+    margin-right: 140px;
+    margin-bottom: 86px;
+    margin-top: 153px;
+}
+.head-banner img{
+ width: 100%;
+ transition: transform .8s 0s ease-in-out;
+}
+.head-banner img:hover{
+    transform:scale(1.2);
+    
+}
+/*-------------------------** players container**----------------- */
+.players-container{
+    width: 1050px;
+    background-color:#F3F1FF;
+    display: grid;
+    grid-template-columns: repeat(3,330px);
+    grid-template-rows: repeat(4,474px);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-left: 180px;
+    margin-top: 70px;
+
+}
+.player{
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.player-photo{
+    width: 300px;
+    height: 256px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.player-photo img{
+    width: 100%;
+}
+.player-info{
+    width: 300px;
+    height: 154px;
+    margin-top: 16px;
+    margin-right: 15px;
+    margin-left: 15px;
+
+}
+/* ---------------------footer----------------- */
+.foot-container{
+    width: 483px;
+    height: 213px;
+    margin-top: 158px;
+    margin-left: 475px;
+    margin-bottom: 63px;
+}
+.foot-logo{
+    width: 483px;
+    height: 110px;
+}
+.foot-container img{
+    width: 100%;
+
+}
+.foot-contact{
+      margin-left: 190px;
+     margin-top: 20px;
+}
+.fab{
+    color: #969BAB;
+}
+/*--------------------------------** media queries** ------------------- */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+
+/*--------------------------header: head container starts------------- */
+    .head-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    /*---------------- header:head-text----------------------- */
+    .head-text{
+        margin-top: 100px;
+    }
+
+/*--------------------main:-players container--------------  */
+    .players-container{
+        grid-template-columns: repeat(2,330px);
+        grid-template-rows: repeat(6,474px);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 18px;
+    }
+/*-------------- footer:coot-container-------------------- */
+    .foot-container{
+      width: 50%;
+      margin: auto;
+    }
+}
