@@ -73,7 +73,7 @@ h3{
     grid-column-gap: 30px;
     grid-row-gap: 27px;
     margin-left: 180px;
-    margin-top: 70px;
+    margin-top: 92px;
 
 }
 .player{
@@ -163,5 +163,62 @@ h3{
     .foot-container{
       width: 50%;
       margin: auto;
+    }
+}
+/*-------------------------------------- mobile devices----------------------- */
+@media only screen and (max-width:688px){
+    .head-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        height: 695px;
+         align-items: center;
+         justify-content: center; 
+    }
+    .head-text{
+        margin-top: 10px;
+        width: 278px;
+        height: 138px;
+        margin-left: 16px;
+        /* margin-top: 112px; */
+        margin-right: 66px;
+    }
+    .head-banner{
+        width: 329px;
+        height: 276px;
+        margin-left: 15px;
+        margin-right: 16px;
+        margin-bottom: 112px;
+       margin-top: 66px;
+    }
+    .head-banner img:hover{
+        transform:scale(1.1);
+        
+    }
+
+/*--------------------main:-players container--------------  */
+    .players-container{
+        grid-template-columns: repeat(1,330px);
+        grid-template-rows: repeat(12,474px);
+        grid-row-gap: 24px;
+        width: 360px;
+        align-items: center;
+        justify-content: center;
+        margin-left:13px;
+    }
+/*-------------- footer:coot-container-------------------- */
+    .foot-container{
+      /* width: 278px; */
+      width: 100%;
+      /* margin: auto; */
+      margin-left: 62px;
+      background-color: red;
+    }
+    .foot-logo{
+        width: 278px;
+    }
+    .foot-container, .foot-contact{
+        margin-left: 62px;
     }
 }
